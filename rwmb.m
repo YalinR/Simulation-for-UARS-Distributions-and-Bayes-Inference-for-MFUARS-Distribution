@@ -2,7 +2,7 @@ function [rval]=rwmb(k,n)
 rval=zeros([n,1,1,1]);
 min=-0.5-10/(2*pi*k);
 max=0.5+10/(2*pi*k);
-mintvals=[floor(min):ceil(max)];
+mintvals=floor(min):ceil(max);
 for c=1:n
     %the range for m
     %cc=(ncx2inv(0.9999999999999999,3,0))^0.5=8.7975
